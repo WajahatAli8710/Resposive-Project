@@ -226,7 +226,7 @@ main section.view-5 {
   padding: 1rem 3rem;
 }
 main section.view-5 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 200;
   text-transform: uppercase;
   color: #f4f2ed;
@@ -248,15 +248,82 @@ main section.view-5 .job p {
   color: #f4f2ed;
   text-transform: uppercase;
 }
+main section.view-6 {
+  gap: 2rem;
+  padding: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+main section.view-6 .card-1 {
+  background-image: url(./images/card-pic-1.webp);
+}
+main section.view-6 .card-2 {
+  background-image: url(./images/card-pic-2.webp);
+}
+main section.view-6 .card-3 {
+  background-image: url(./images/card-pic-3.webp);
+}
+main section.view-6 .card {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 0.5rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+main section.view-6 .card .top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.4rem;
+}
+main section.view-6 .card .top .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.6rem;
+  border-radius: 50%;
+  color: #f4f2ed;
+}
+main section.view-6 .card .icon,
+main section.view-6 .card .bottom {
+  width: 100%;
+  background-color: rgba(244, 242, 237, 0.1019607843);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+main section.view-6 .card .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+main section.view-6 .card .bottom p:nth-child(1) {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+main section.view-6 .card .bottom p {
+  text-transform: uppercase;
+  color: #f4f2ed;
+}
 
 @media (min-width: 700px) {
   html {
     font-size: 16px;
   }
 }
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   section.view-5 .job {
     opacity: 0;
+  }
+  main section.view-6 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
 }
 @media (min-width: 1000px) {
@@ -318,6 +385,10 @@ main section.view-5 .job p {
   main section.view-4 .bottom .text .paragraph {
     flex-direction: row;
     gap: 1rem;
+  }
+  main section.view-6 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
 }
 @media (min-width: 1300px) {
