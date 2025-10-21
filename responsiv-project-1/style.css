@@ -363,6 +363,47 @@ main .view-7 > .top {
   background-image: url(./images/view-7-pic.webp);
   background-size: cover;
 }
+main section.view-8 {
+  width: 100%;
+}
+main section.view-8 .inner-view-8 {
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: #cebd63;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+main section.view-8 .top small {
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
+main section.view-8 .top h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 2.5rem;
+}
+main section.view-8 .bottom {
+  background-color: #121212;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-shrink: 0;
+}
+main section.view-8 .bottom p {
+  font-size: 0.9rem;
+  color: #f4f2ed;
+  text-transform: uppercase;
+  font-weight: 500;
+}
 
 @media (min-width: 700px) {
   html {
@@ -377,6 +418,10 @@ main .view-7 > .top {
   }
   main section.view-7 .bottom {
     gap: 6rem;
+  }
+  main section.view-8 .inner-view-8 .top h2 {
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }
 @media (min-width: 1000px) {
@@ -452,6 +497,17 @@ main .view-7 > .top {
   }
   main section.view-7 > .top {
     width: 50%;
+  }
+  main section.view-8 .inner-view-8 {
+    padding: 3rem;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  main section.view-8 .inner-view-8 .top h2 {
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }
 @media (min-width: 1300px) {
