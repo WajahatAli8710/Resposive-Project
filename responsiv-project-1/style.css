@@ -312,19 +312,71 @@ main section.view-6 .card .bottom p {
   text-transform: uppercase;
   color: #f4f2ed;
 }
+main section.view-7 {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+main section.view-7 .bottom {
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border-radius: 0.5rem;
+}
+main section.view-7 .bottom p {
+  font-size: 0.9rem;
+  color: rgba(244, 242, 237, 0.6);
+  text-transform: uppercase;
+}
+main section.view-7 .bottom h2 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #f4f2ed;
+}
+main section.view-7 .bottom .job {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main section.view-7 .bottom .job .icon {
+  background-color: #292929;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid #f4f2ed;
+  color: #f4f2ed;
+}
+main section.view-7 .bottom .job p {
+  font-size: 0.9rem;
+  color: #f4f2ed;
+  text-transform: uppercase;
+}
+main .view-7 > .top {
+  border-radius: 0.5rem;
+  width: 100%;
+  aspect-ratio: 3/2;
+  background-image: url(./images/view-7-pic.webp);
+  background-size: cover;
+}
 
 @media (min-width: 700px) {
   html {
     font-size: 16px;
   }
-}
-@media (min-width: 700px) {
   main section.view-5 .job {
     opacity: 1;
   }
   main section.view-6 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+  }
+  main section.view-7 .bottom {
+    gap: 6rem;
   }
 }
 @media (min-width: 1000px) {
@@ -391,6 +443,16 @@ main section.view-6 .card .bottom p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
   }
+  main section.view-7 {
+    flex-direction: row;
+  }
+  main section.view-7 .bottom {
+    width: 50%;
+    justify-content: space-between;
+  }
+  main section.view-7 > .top {
+    width: 50%;
+  }
 }
 @media (min-width: 1300px) {
   main section.view-1 .bottom {
@@ -441,5 +503,11 @@ main section.view-6 .card .bottom p {
   }
   main section.view-4 .bottom .text .paragraph p {
     font-size: 1.2rem;
+  }
+  main section.view-7 .bottom {
+    padding: 3rem;
+  }
+  main section.view-7 .bottom .top h2 {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
