@@ -655,6 +655,7 @@ main section.view-9 .bottom .inner-bottom .icon {
   main section.view-8 .inner-view-8 {
     padding: 3rem;
     flex-direction: row;
+    justify-content: space-between;
     align-items: flex-end;
   }
   main section.view-9 {
