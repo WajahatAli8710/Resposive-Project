@@ -291,13 +291,13 @@ main section.view-6 .card .top .icon {
 }
 main section.view-6 .card .icon,
 main section.view-6 .card .bottom {
-  width: 100%;
   background-color: rgba(244, 242, 237, 0.1019607843);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 main section.view-6 .card .bottom {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -345,11 +345,15 @@ main section.view-7 .bottom .job {
   gap: 1rem;
 }
 main section.view-7 .bottom .job .icon {
-  background-color: #292929;
-  padding: 0.5rem;
-  border-radius: 50%;
-  border: 1px solid #f4f2ed;
   color: #f4f2ed;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.6rem;
+  border-radius: 50%;
+  background-color: rgba(244, 242, 237, 0.1019607843);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 main section.view-7 .bottom .job p {
   font-size: 0.9rem;
@@ -404,6 +408,38 @@ main section.view-8 .bottom p {
   color: #f4f2ed;
   text-transform: uppercase;
   font-weight: 500;
+}
+main section.view-9 {
+  width: 100%;
+  padding: 1rem;
+}
+main section.view-9 .top {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border-radius: 0.5rem;
+}
+main section.view-9 .top p {
+  font-size: 1.5rem;
+  color: rgba(244, 242, 237, 0.6);
+}
+main section.view-9 .top .bottom {
+  display: flex;
+  gap: 0.4rem;
+}
+main section.view-9 .top .bottom .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.6rem;
+  border-radius: 50%;
+  color: #f4f2ed;
+  background-color: rgba(244, 242, 237, 0.1019607843);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 @media (min-width: 700px) {

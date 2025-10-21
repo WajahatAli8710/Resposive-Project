@@ -297,13 +297,13 @@ main {
 
       .icon,
       .bottom {
-        width: 100%;
         background-color: #f4f2ed1a;
         backdrop-filter: blur(8px);
         border: 1px solid rgb(255 255 255 / 15%);
       }
 
       .bottom {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -350,11 +350,13 @@ main {
         gap: 1rem;
 
         .icon {
-          background-color: #292929;
-          padding: 0.5rem;
-          border-radius: 50%;
-          border: 1px solid #f4f2ed;
           color: #f4f2ed;
+          width: fit-content;
+          padding: 0.6rem;
+          border-radius: 50%;
+          background-color: #f4f2ed1a;
+          backdrop-filter: blur(8px);
+          border: 1px solid rgb(255 255 255 / 15%);
         }
         p {
           font-size: 0.9rem;
@@ -413,6 +415,38 @@ main {
         color: #f4f2ed;
         text-transform: uppercase;
         font-weight: 500;
+      }
+    }
+  }
+
+  section.view-9 {
+    width: 100%;
+    padding: 1rem;
+
+    .top {
+      width: 100%;
+      padding: 1.5rem;
+      background-color: #1e1e1e;
+      @include flex-style(4rem);
+      border-radius: 0.5rem;
+
+      p {
+        font-size: 1.5rem;
+        color: rgb(244 242 237 / 60%);
+      }
+      .bottom {
+        display: flex;
+        gap: 0.4rem;
+
+        .icon {
+          width: fit-content;
+          padding: 0.6rem;
+          border-radius: 50%;
+          color: #f4f2ed;
+          background-color: #f4f2ed1a;
+          backdrop-filter: blur(8px);
+          border: 1px solid rgb(255 255 255 / 15%);
+        }
       }
     }
   }
@@ -547,24 +581,23 @@ main {
         padding: 3rem;
         flex-direction: row;
         align-items: flex-end;
-
       }
     }
   }
 }
 @media (min-width: 1200px) {
-  main{
-  section.view-8 {
-    .inner-view-8 {
-      .top {
-        h2 {
-          font-size: 5rem;
-          line-height: 5rem;
+  main {
+    section.view-8 {
+      .inner-view-8 {
+        .top {
+          h2 {
+            font-size: 5rem;
+            line-height: 5rem;
+          }
         }
       }
     }
   }
-}
 }
 @media (min-width: 1300px) {
   main {
@@ -637,6 +670,7 @@ main {
         }
       }
     }
+
     section.view-7 {
       .bottom {
         padding: 3rem;
