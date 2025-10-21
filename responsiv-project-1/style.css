@@ -364,6 +364,7 @@ main .view-7 > .top {
   background-size: cover;
 }
 main section.view-8 {
+  padding: 1rem;
   width: 100%;
 }
 main section.view-8 .inner-view-8 {
