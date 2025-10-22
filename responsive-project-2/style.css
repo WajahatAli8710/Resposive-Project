@@ -56,7 +56,7 @@ main section.view-1 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6rem;
+  gap: 4rem;
 }
 main section.view-1 .container .top {
   width: 100%;
@@ -92,6 +92,7 @@ main section.view-1 .container p {
 @media (min-width: 1000px) {
   main section.view-1 .container {
     padding: 0rem 4rem;
+    gap: 6rem;
   }
   main section.view-1 .container .top {
     flex-direction: row-reverse;
