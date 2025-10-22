@@ -96,8 +96,8 @@ main section.view-2 .container {
   flex-direction: column;
   gap: 3rem;
   max-width: 1400px;
-  padding: 6rem;
   margin: 0 auto;
+  padding: 3rem 1rem;
 }
 main section.view-2 .container .card {
   width: 100%;
@@ -142,5 +142,6 @@ main section.view-2 .container .card img {
   }
   main section.view-2 .container {
     flex-direction: row;
+    padding: 6rem;
   }
 }/*# sourceMappingURL=style.css.map */

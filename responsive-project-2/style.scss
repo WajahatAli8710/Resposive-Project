@@ -104,8 +104,8 @@ main {
         flex-direction: column;
         gap: 3rem;
     max-width: 1400px;
-    padding: 6rem ;
         margin: 0 auto;
+        padding: 3rem 1rem;
         .card{
         width: 100%;
         display: flex;
@@ -161,7 +161,7 @@ main {
     section.view-2{
         .container{
             flex-direction: row;
-        
+            padding: 6rem ;
         }
     }
   }
