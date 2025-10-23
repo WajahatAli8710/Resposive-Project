@@ -283,7 +283,7 @@ main {
     .cta {
       max-width: 100%;
       margin: 0 auto;
-      max-width: 1300px;
+      max-width: 1200px;
       background-color: #042449;
       border-radius: 2rem;
       padding: 3rem 2rem;
@@ -409,6 +409,12 @@ main {
         .text {
           width: 40%;
         }
+      }
+    }
+
+    section.view-6{
+      .cta{
+padding: 3rem 4rem;
       }
     }
   }

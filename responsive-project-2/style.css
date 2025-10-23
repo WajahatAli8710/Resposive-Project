@@ -35,6 +35,7 @@ main nav {
 main nav .left {
   display: flex;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
 }
 main nav .right i {
@@ -163,6 +164,7 @@ main section.view-3 .container .text button {
   background-color: transparent;
   border-radius: 1.5rem;
   color: #0468d7;
+  width: -moz-fit-content;
   width: fit-content;
 }
 main section.view-3 .container .text small {
@@ -215,6 +217,7 @@ main section.view .container .text button {
   border-radius: 1.5rem;
   color: #fff;
   background-color: #0468d7;
+  width: -moz-fit-content;
   width: fit-content;
   border: none;
 }
@@ -260,6 +263,7 @@ main section.view-5 .container .text button {
   background-color: transparent;
   border-radius: 1.5rem;
   color: #0468d7;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid #0468d7;
 }
@@ -269,7 +273,7 @@ main section.view-6 {
 main section.view-6 .cta {
   max-width: 100%;
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1200px;
   background-color: #042449;
   border-radius: 2rem;
   padding: 3rem 2rem;
@@ -315,6 +319,7 @@ main section.view-6 .cta .text .inner-cta button {
   color: #0468d7;
   background-color: #fff;
   border: none;
+  width: -moz-fit-content;
   width: fit-content;
 }
 main section.view-6 .cta .text .inner-cta h6 {
@@ -323,6 +328,7 @@ main section.view-6 .cta .text .inner-cta h6 {
   font-weight: 600;
   padding-left: 1rem;
   color: #fff;
+  width: -moz-fit-content;
   width: fit-content;
 }
 main section.view-6 .cta img {
@@ -386,6 +392,7 @@ main section.view-6 .cta img {
   main section.view-5 .container .text {
     width: 40%;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+  main section.view-6 .cta {
+    padding: 3rem 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */
