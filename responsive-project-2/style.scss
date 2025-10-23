@@ -10,8 +10,8 @@ body {
   height: 100%;
   width: 100%;
 }
-@mixin mini-text {
-  opacity: 0.7;
+@mixin mini-text($opacity) {
+  opacity: $opacity;
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
@@ -132,7 +132,7 @@ main {
           font-weight: 700;
         }
         p {
-          @include mini-text();
+          @include mini-text(0.7);
         }
         img {
           width: 100%;
@@ -169,7 +169,7 @@ main {
           font-size: 3rem;
         }
         p {
-          @include mini-text();
+          @include mini-text(0.7);
         }
 
         button {
@@ -218,7 +218,7 @@ main {
           font-size: 3rem;
         }
         p {
-          @include mini-text();
+          @include mini-text(0.7);
         }
 
         button {
@@ -261,7 +261,7 @@ main {
           font-size: 3rem;
         }
         p {
-          @include mini-text();
+          @include mini-text(0.7);
         }
 
         button {
@@ -305,7 +305,7 @@ main {
           color: #fff;
         }
         p {
-          @include mini-text();
+          @include mini-text(1);
           color: #fff;
         }
 
@@ -345,11 +345,90 @@ main {
       }
     }
   }
+
+  section.footer {
+    padding: 3rem;
+    background-color: #f8f9fa;
+
+    .top {
+      @include flex-style();
+
+      .right {
+        padding-left: 1rem;
+        @include flex-style();
+        padding: 4rem 0rem;
+        gap: 4rem;
+        .parts {
+          @include flex-style();
+          gap: 1rem;
+          p {
+            @include small-text();
+            opacity: 1;
+          }
+          small {
+            @include mini-text(0.7);
+          }
+        }
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      padding: 2rem 1.5rem;
+      border-bottom: 1px solid #dadce0;
+      display: flex;
+      justify-content: center;
+      .icons {
+        display: flex;
+        gap: 0.8rem;
+        i {
+          font-size: 1.5rem;
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .inner-footer {
+      @include flex-style();
+      padding: 2rem 0rem;
+
+      gap: 1rem;
+      p {
+        @include mini-text(0.7);
+        max-width: 600px;
+        text-align: center;
+      }
+      .conformation {
+        ul {
+          @include mini-text(0.7);
+          gap: 1rem;
+          display: flex;
+          justify-content: center;
+          list-style: none;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 400px) {
   main section.view-6 .cta .text .inner-cta {
     flex-direction: row;
     align-items: center;
+  }
+}
+@media (min-width: 700px) {
+  main {
+    section.footer {
+      .inner-footer {
+        gap: 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          text-align: start;
+        }
+      }
+    }
   }
 }
 @media (min-width: 1000px) {
@@ -412,9 +491,25 @@ main {
       }
     }
 
-    section.view-6{
-      .cta{
-padding: 3rem 4rem;
+    section.view-6 {
+      .cta {
+        padding: 3rem 4rem;
+      }
+    }
+
+    section.footer {
+      .top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .right {
+          flex-direction: row;
+          padding-top: 0;
+          padding: 0rem 4rem 4rem 4rem;
+        }
+      }
+      .bottom {
+        justify-content: flex-start;
       }
     }
   }
