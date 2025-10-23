@@ -114,12 +114,158 @@ main section.view-2 .container .card h3 {
 main section.view-2 .container .card p {
   opacity: 0.7;
   font-size: 1.2rem;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
 }
 main section.view-2 .container .card img {
   width: 100%;
   max-width: 300px;
   align-self: center;
+}
+main section.view-3 {
+  width: 100%;
+}
+main section.view-3 .container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+main section.view-3 .container img {
+  width: 100%;
+  max-width: 500px;
+}
+main section.view-3 .container .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-right: 2rem;
+}
+main section.view-3 .container .text h4 {
+  opacity: 0.7;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+}
+main section.view-3 .container .text h2 {
+  font-size: 3rem;
+}
+main section.view-3 .container .text p {
+  opacity: 0.7;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+main section.view-3 .container .text button {
+  display: block;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border: 1px solid #0468d7;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  color: #0468d7;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main section.view-3 .container .text small {
+  font-size: 0.9rem;
+  color: #000;
+  font-weight: 600;
+  padding-left: 1.5rem;
+}
+main section.view {
+  width: 100%;
+  background: linear-gradient(to top right, #FCFCE2 45%, #F5FBFE);
+}
+main section.view .container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem;
+}
+main section.view .container img {
+  width: 100%;
+  max-width: 500px;
+}
+main section.view .container .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-right: 2rem;
+}
+main section.view .container .text h4 {
+  opacity: 0.7;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+}
+main section.view .container .text h2 {
+  font-size: 3rem;
+}
+main section.view .container .text p {
+  opacity: 0.7;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+main section.view .container .text button {
+  display: block;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  color: #fff;
+  background-color: #0468d7;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+}
+main section.view-5 {
+  width: 100%;
+}
+main section.view-5 .container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem;
+}
+main section.view-5 .container img {
+  width: 100%;
+  max-width: 500px;
+}
+main section.view-5 .container .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-right: 2rem;
+}
+main section.view-5 .container .text h4 {
+  opacity: 0.7;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+}
+main section.view-5 .container .text h2 {
+  font-size: 3rem;
+}
+main section.view-5 .container .text p {
+  opacity: 0.7;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+main section.view-5 .container .text button {
+  display: block;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  color: #0468d7;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #0468d7;
 }
 
 @media (min-width: 1000px) {
@@ -143,5 +289,29 @@ main section.view-2 .container .card img {
   main section.view-2 .container {
     flex-direction: row;
     padding: 6rem;
+  }
+  main section.view-3 .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section.view-3 .container .text {
+    width: 40%;
+  }
+  main section.view .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section.view .container .text {
+    width: 40%;
+  }
+  main section.view-5 .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section.view-5 .container .text {
+    width: 40%;
   }
 }/*# sourceMappingURL=style.css.map */

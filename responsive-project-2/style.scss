@@ -10,6 +10,23 @@ body {
   height: 100%;
   width: 100%;
 }
+@mixin mini-text {
+  opacity: 0.7;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+@mixin small-text() {
+  opacity: 0.7;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+}
+
+@mixin flex-style() {
+  display: flex;
+  flex-direction: column;
+}
 
 main {
   width: 100%;
@@ -57,15 +74,13 @@ main {
 
     .container {
       max-width: 1400px;
-      display: flex;
-      flex-direction: column;
+      @include flex-style();
       align-items: center;
       gap: 4rem;
 
       .top {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+       @include flex-style();
         align-items: center;
         gap: 4rem;
         padding: 1rem;
@@ -96,44 +111,174 @@ main {
     }
   }
 
-  section.view-2{
+  section.view-2 {
     width: 100%;
-     
-    .container{
-         display: flex;
-        flex-direction: column;
-        gap: 3rem;
-    max-width: 1400px;
-        margin: 0 auto;
-        padding: 3rem 1rem;
-        .card{
+
+    .container {
+      @include flex-style();
+      gap: 3rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+      .card {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        @include flex-style();
         gap: 2.5rem;
         padding: 1.5rem 1.5rem 0rem 0rem;
         border-top: 3px solid rgb(211 211 211 / 70%);
-        
-        
-        h3{
 
-            font-size: 1.5rem;
-            font-weight: 700;
-
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 700;
         }
-        p{
-            opacity: 0.7;
-            font-size: 1.2rem;
-            line-height: 1.2rem;
+        p {
+          @include mini-text();
         }
-        img{
-            width: 100%;
-            max-width: 300px;
-            align-self: center;
+        img {
+          width: 100%;
+          max-width: 300px;
+          align-self: center;
         }
-    }
+      }
     }
   }
+
+  section.view-3 {
+    width: 100%;
+   
+    .container {
+      max-width: 1400px;
+       margin: auto;
+     @include flex-style();
+      padding: 1rem;
+
+      img {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .text {
+        width: 100%;
+        @include flex-style();
+        gap: 1.5rem;
+        padding-right: 2rem;
+        h4 {
+          @include small-text();
+        }
+        h2 {
+          font-size: 3rem;
+        }
+        p {
+          @include mini-text();
+        }
+
+        button {
+          display: block;
+          padding: 0.5rem 2rem;
+          font-size: 1rem;
+          border: 1px solid #0468d7;
+          background-color: transparent;
+          border-radius: 1.5rem;
+          color: #0468d7;
+          width: fit-content;
+        }
+        small {
+          font-size: 0.9rem;
+          color: #000;
+          font-weight: 600;
+          padding-left: 1.5rem;
+        }
+      }
+    }
+  }
+
+  section.view{
+    width: 100%;
+    background: linear-gradient(to top right   , #FCFCE2 45%,#F5FBFE);
+    .container {
+      max-width: 1400px;
+       margin: auto;
+     @include flex-style();
+      padding: 3rem 1rem;
+
+      img {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .text {
+        width: 100%;
+        @include flex-style();
+        gap: 1.5rem;
+        padding-right: 2rem;
+        h4 {
+          @include small-text();
+        }
+        h2 {
+          font-size: 3rem;
+        }
+        p {
+          @include mini-text();
+        }
+
+        button {
+          display: block;
+          padding: 0.5rem 2rem;
+          font-size: 1rem;
+          background-color: transparent;
+          border-radius: 1.5rem;
+          color: #fff;
+          background-color:#0468d7 ;
+          width: fit-content;
+          border: none;
+        }
+      }
+    }
+  }
+
+   section.view-5{
+    width: 100%;
+    .container {
+      max-width: 1400px;
+       margin: auto;
+     @include flex-style();
+      padding: 3rem 1rem;
+
+      img {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .text {
+        width: 100%;
+        @include flex-style();
+        gap: 1.5rem;
+        padding-right: 2rem;
+        h4 {
+          @include small-text();
+        }
+        h2 {
+          font-size: 3rem;
+        }
+        p {
+          @include mini-text();
+        }
+
+        button {
+          display: block;
+          padding: 0.5rem 2rem;
+          font-size: 1rem;
+          background-color: transparent;
+          border-radius: 1.5rem;
+          color: #0468d7;
+          width: fit-content;
+          border: 1px solid #0468d7;
+        }
+      }
+    }
+  }
+
+  
 }
 
 @media (min-width: 1000px) {
@@ -158,11 +303,42 @@ main {
       }
     }
 
-    section.view-2{
-        .container{
-            flex-direction: row;
-            padding: 6rem ;
+    section.view-2 {
+      .container {
+        flex-direction: row;
+        padding: 6rem;
+      }
+    }
+
+    section.view-3 {
+      .container {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        .text {
+          width: 40%;
         }
+      }
+    }
+section.view {
+      .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .text {
+          width: 40%;
+        }
+      }
+    }
+    section.view-5 {
+      .container {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        .text {
+          width: 40%;
+        }
+      }
     }
   }
 }
